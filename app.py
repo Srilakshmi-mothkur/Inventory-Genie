@@ -9,6 +9,8 @@ import numpy as np
 import faiss
 import os
 
+os.environ["GOOGLE_API_KEY"] = "insert api key"
+
 def load_data():
     uploaded_files = st.file_uploader("Upload CSV files", type=['csv'], accept_multiple_files=True)
     dfs = {}
